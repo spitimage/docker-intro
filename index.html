@@ -50,28 +50,6 @@
 </section>
 		
 <section>
-	<h2>Since it started in March 2013...</h2>
-	<ul>
-		<li class="fragment" data-fragment-index="0">&gt;200,000 pulls</li>
-		<li class="fragment" data-fragment-index="2">&gt;7,500 github stars</li>
-		<li class="fragment" data-fragment-index="3">&gt;200 significant contributors</li>
-		<li class="fragment" data-fragment-index="4">&gt;200 projects built on top of docker</li>
-		<ul>
-			<li class="fragment" data-fragment-index="4">UIs, mini-PaaS, Remote Desktop...</li>
-		</ul>
-		<li class="fragment" data-fragment-index="5">1000’s of Dockerized applications</li>
-		<ul>
-			<li class="fragment" data-fragment-index="5">Memcached, Redis, Node.js, Hadoop...</li>
-		</ul>
-		<li class="fragment" data-fragment-index="6">Integration in Jenkins, Travis, Chef, Puppet, Vagrant and OpenStack</li>
-		<li class="fragment" data-fragment-index="7">Meetups arranged around the world…</li>
-		<ul>
-			<li class="fragment" data-fragment-index="7">with organizations like Ebay, Cloudflare, Yandex, and Rackspace presenting on their use of Docker</li>
-		</ul>
-	</ul>
-</section>
-
-<section>
 	<h2>The Challenge</h2>
 	<p>
 		<img src="docker-img/the-challenge.png">
@@ -120,86 +98,12 @@
 	</p>
 </section>
 
-<section>
-	<h2>Why Developers Care</h2>
-	<div style="text-align: left;">
-		Build once... (finally) run <i><font color="#073763">anywhere<b>*</b></font></i>
-		<ul>
-			<li class="fragment" data-fragment-index="0">A clean, safe, hygienic, portable runtime environment for your app.</li>
-			<li class="fragment" data-fragment-index="1">No worries about missing dependencies, packages and other pain points during subsequent deployments.</li>
-			<li class="fragment" data-fragment-index="2">Run each app in its own isolated container, so you can run various versions of libraries and other dependencies for each app without worrying.</li>
-			<li class="fragment" data-fragment-index="3">Automate testing, integration, packaging...anything you can script.</li>
-			<li class="fragment" data-fragment-index="4">Reduce/eliminate concerns about compatibility on different platforms, either your own or your customers.</li>
-			<li class="fragment" data-fragment-index="5">Cheap, zero-penalty containers to deploy services. A VM without the overhead of a VM. Instant replay and reset of image snapshots.</li>
-		</ul>
-	</div>
-	<div style="text-align: center; font-size: 24px; line-height: 1.1em; ">
-		<i><font color="#073763">* Where "anywhere" means an x86 server running a modern Linux kernel<br/>
-			(3.2+ generally or 2.6.32+ for RHEL 6.5+,&nbsp;Fedora, &amp; related)</font></i>
-	</div>
-</section>
-
-<section>
-	<h2>Why Administrators Care</h2>
-	<div style="text-align: left;">
-	Configure once... run anything
-	<ul>
-		<li class="fragment" data-fragment-index="0">Make the entire lifecycle more efficient, consistent, and repeatable</li>
-		<li class="fragment" data-fragment-index="1">Increase the quality of code produced by developers.</li>
-		<li class="fragment" data-fragment-index="2">Eliminate inconsistencies between development, test, production, and customer environments.</li>
-		<li class="fragment" data-fragment-index="3">Support segregation of duties.</li>
-		<li class="fragment" data-fragment-index="4">Significantly improves the speed and reliability of continuous deployment and continuous integration systems.</li>
-		<li class="fragment" data-fragment-index="5">Because the containers are so lightweight, address significant performance, costs, deployment, and portability issues normally associated with VMs.</li>
-	</ul>
-</section>
 
 <section>
 	<h2>Why it Works: Separation of Concerns</h2>
 	<p>
 		<img src="docker-img/separation-of-concerns.png">
 	</p>
-</section>
-
-<section>
-	<h2>More Technical Details</h2>
-	<div style="position: absolute; left: 1%; top: 100px; width: 48%;" class="absolute-element">
-		<p><b>Why</b></p>
-		<ul style="text-align: left; line-height=1.1em;">
-			<li class="fragment" data-fragment-index="0">Run everywhere</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="0">
-				<li>Regardless of kernel version</li>
-				<li>Regardless of host distro</li>
-				<li>Physical or virtual, cloud or not</li>
-				<li>Container and host architecture must match...</li>
-			</ul>
-			<li class="fragment" data-fragment-index="1">Run anything</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="1">
-				<li>If it can run on the host, it can run in the container</li>
-				<li>If it can on a Linux kernel, it can run</li>
-			</ul>
-		</ul>
-	</div>
-	<div style="position: absolute; left: 52%; top: 100px; width: 48%;" class="absolute-element">
-		<p><b>What</b></p>
-		<ul style="text-align: left; line-height=1.1em;">
-			<li class="fragment" data-fragment-index="2">High level: a lightweight VM</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="2">
-				<li>Own process space</li>
-				<li>Own network interface</li>
-				<li>Can run stuff as root</li>
-				<li>Can have its own /sbin/init (different from host)</li>
-				<li>&lt;&lt;machine container&gt;&gt;</li>
-			</ul>
-			<li class="fragment" data-fragment-index="3">Low level: chroot on steroids</li>
-			<ul style="font-size: 24px;" class="fragment" data-fragment-index="3">
-				<li>Can also <i>not </i>have its own /sbin/init</li>
-				<li>Container = isolated processes</li>
-				<li>Share kernel with host</li>
-				<liNo device emulation</li>
-				<li>&lt;&lt;application container&gt;&gt;</li>
-			</ul>
-		</ul>
-	</div>
 </section>
 
 <section>
@@ -230,9 +134,6 @@
 	</p>
 </section>
 
-<section>
-	<h1>Demo Time</h1>
-</section>
 
 <section>
 	<h2>Ecosystem Support</h2>
@@ -276,35 +177,6 @@
 			</ul>
 		</ul>
 	</font>
-</section>
-
-<section>
-	<h2>Docker Futures</h2>
-	<ul style="font-size: 34px; line-height: 1.1em; text-align: left; width:95%;">
-		<img style="float:right;" src="docker-img/docker-futures.png"/>
-		<li>Docker 0.7 (current release)</li>
-		<ul>
-			<li>Fedora compatibility</li>
-			<li>Reduce kernel dependencies</li>
-			<li>Device mapper</li>
-			<li>Container linking</li>
-		</ul>
-		<li>Docker 0.8 (Dec)</li>
-		<ul>
-			<li>Shrink &nbsp;and stabilize Core</li>
-			<li>Provide stable, pluggable API</li>
-			<li>RHEL compatibility</li>
-			<li>Nested containers</li>
-			<li>Beam: Introspection API based on Redis</li>
-			<li>Expand snapshot management features for data volumes</li>
-			<li>Will consider this “production ready”</li>
-		</ul>
-		<li>Docker 0.9 (Jan)</li>
-		<li>Docker 1.0 (Feb)</li>
-		<ul>
-			<li>Will offer support for this product</li>
-		</ul>
-	</ul>
 </section>
 
 <section>

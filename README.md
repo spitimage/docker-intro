@@ -1,3 +1,6 @@
+# Note
+I forked this presentation from [here][orig] and thinned it out a bit (removed outdated information and kept the images). Special thanks to [John Lewis][jl] for originally putting these together.
+
 Intro to Docker
 ===============
 
@@ -13,7 +16,10 @@ HTML5-based presentation to use when doing so. I hope others find this
 helpful, and I'm more than happy for the Docker community to find some
 use in this.
 
-[![ScreenShot](screenshot.png?raw=true)](http://pointful.github.io/docker-intro/)
+[![ScreenShot](screenshot.png?raw=true)](http://spitimage.github.io/docker-intro/)
 
-### [View Presentation](http://pointful.github.io/docker-intro/)
-### [Printable Slides (Chrome Only)](http://pointful.github.io/docker-intro/?print-pdf)
+### [View Presentation](http://spitimage.github.io/docker-intro/)
+### [Printable Slides (Chrome Only)](http://spitimage.github.io/docker-intro/?print-pdf)
+
+[orig]: https://github.com/pointful/docker-intro
+[jl]: https://github.com/pointful
